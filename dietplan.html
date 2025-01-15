@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGO GYM - Complete Training & Nutrition Program</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #ff0000;
+            --secondary-color: #2d2d2d;
+            --accent-color: #404040;
+        }
+
+        .youtube-btn {
+            background: linear-gradient(45deg, #cc0000, var(--primary-color));
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.875rem;
+            display: inline-block;
+        }
+
+        .youtube-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(255, 0, 0, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+
+        .section-header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .workout-table, .meal-table {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 2rem auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .workout-table th, .meal-table th {
+            background: linear-gradient(45deg, #2d2d2d, var(--primary-color));
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .workout-table td, .meal-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--accent-color);
+            text-align: center;
+        }
+
+        .workout-table tr:hover, .meal-table tr:hover {
+            background-color: var(--accent-color);
+        }
+
+        section {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 0 auto 2rem auto;
+            max-width: 1200px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .macro-card {
+            background-color: #1a1a1a;
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .program-nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            border-radius: 8px;
+            z-index: 1000;
+            border: 1px solid var(--primary-color);
+        }
+
+        @media print {
+            .program-nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <div class="program-nav">
+        <div class="space-y-2">
+            <a href="#overview" class="block text-white hover:text-red-500">Overview</a>
+            <a href="#workout" class="block text-white hover:text-red-500">Workout Plan</a>
+            <a href="#nutrition" class="block text-white hover:text-red-500">Nutrition</a>
+            <a href="#supplements" class="block text-white hover:text-red-500">Supplements</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="py-12" id="overview">
+        <h1 class="text-6xl font-bold mb-4 text-red-600">EGO GYM</h1>
+        <h2 class="text-4xl font-bold mb-4 text-white">Dina Complete Training & Nutrition Program</h2>
+        <p class="text-xl">Your comprehensive guide to building muscle and optimizing performance</p>
+    </header>
+
+    <!-- Workout Program -->
+    <a href="https://egogym.github.io/amira_trainingplan_ego/High-Protein-Diet-Plan.html"
+    class="youtube-btn inline-block"
+    style="padding: 5px 5px; margin: 15px; display: inline-block;">
+Go To the Workout Plan </a>
+
+    <!-- Nutrition Program -->
+    <section id="nutrition">
+        <h2 class="text-2xl font-bold mb-4 section-header">High-Protein Diet Plan</h2>
+
+        <!-- Daily Macros Summary -->
+        <div class="grid md:grid-cols-4 gap-4 mt-6">
+            <div class="macro-card">
+                <h3 class="text-red-500 font-bold mb-2">Daily Calories</h3>
+                <p class="text-2xl font-bold">1700-1800</p>
+                <p class="text-sm text-gray-400">kcal</p>
+            </div>
+            <div class="macro-card">
+                <h3 class="text-red-500 font-bold mb-2">Protein</h3>
+                <p class="text-2xl font-bold">150g</p>
+                <p class="text-sm text-gray-400">daily target</p>
+            </div>
+            <div class="macro-card">
+                <h3 class="text-red-500 font-bold mb-2">Carbs</h3>
+                <p class="text-2xl font-bold">160g</p>
+                <p class="text-sm text-gray-400">daily target</p>
+            </div>
+            <div class="macro-card">
+                <h3 class="text-red-500 font-bold mb-2">Fats</h3>
+                <p class="text-2xl font-bold">40g</p>
+                <p class="text-sm text-gray-400">daily target</p>
+            </div>
+        </div>
+
+        <!-- Meal Plan -->
+        <section class="mt-8">
+            <h3 class="text-xl font-bold mb-4 text-red-500">Daily Meal Plan</h3>
+            <table class="meal-table">
+                <thead>
+                    <tr>
+                        <th>Meal & Time</th>
+                        <th>Foods</th>
+                        <th>Macros</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-gray-300 font-bold">Breakfast<br>(Pre-Workout)</td>
+                        <td class="text-gray-300">
+                            • 50g oats with milk and honey<br>
+                            • 2 whole eggs + 2 egg whites<br>
+                            • Black coffee or green tea
+                        </td>
+                        <td class="text-gray-300">
+                            350 kcal<br>
+                            Protein: 25g<br>
+                            Carbs: 40g<br>
+                            Fat: 8g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-gray-300 font-bold">Post-Workout</td>
+                        <td class="text-gray-300">
+                            • 1 scoop whey protein<br>
+                            • 1 medium banana<br>
+                            • 200ml water or milk
+                        </td>
+                        <td class="text-gray-300">
+                            250 kcal<br>
+                            Protein: 25g<br>
+                            Carbs: 30g<br>
+                            Fat: 2g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-gray-300 font-bold">Lunch</td>
+                        <td class="text-gray-300">
+                            • 150g grilled chicken breast<br>
+                            • 100g brown rice<br>
+                            • Mixed salad with olive oil
+                        </td>
+                        <td class="text-gray-300">
+                            450 kcal<br>
+                            Protein: 40g<br>
+                            Carbs: 45g<br>
+                            Fat: 8g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-gray-300 font-bold">Afternoon Snack</td>
+                        <td class="text-gray-300">
+                            • 150g Greek yogurt<br>
+                            • 10 almonds
+                        </td>
+                        <td class="text-gray-300">
+                            200 kcal<br>
+                            Protein: 15g<br>
+                            Carbs: 10g<br>
+                            Fat: 10g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-gray-300 font-bold">Dinner</td>
+                        <td class="text-gray-300">
+                            • 120g grilled fish or lean beef<br>
+                            • Steamed vegetables<br>
+                            • 100g sweet potato
+                        </td>
+                        <td class="text-gray-300">
+                            400 kcal<br>
+                            Protein: 35g<br>
+                            Carbs: 35g<br>
+                            Fat: 8g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-gray-300 font-bold">Optional<br>Pre-Bed Snack</td>
+                        <td class="text-gray-300">
+                            • 100g cottage cheese<br>
+                            • 1 tsp peanut butter
+                        </td>
+                        <td class="text-gray-300">
+                            150 kcal<br>
+                            Protein: 12g<br>
+                            Carbs: 5g<br>
+                            Fat: 8g
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Nutrition Guidelines -->
+        <div class="grid md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-black p-6 rounded-lg border border-red-800">
+                <h3 class="text-xl text-red-500 mb-4">Meal Preparation Tips</h3>
+                <ul class="text-gray-300 space-y-2 text-left">
+                    <li>• Prep meals in advance when possible</li>
+                    <li>• Use food scale for accurate portions</li>
+                    <li>• Store meals properly in containers</li>
+                    <li>• Focus on whole, unprocessed foods</li>
+                </ul>
+            </div>
+            <div class="bg-black p-6 rounded-lg border border-red-800">
+                <h3 class="text-xl text-red-500 mb-4">Timing Guidelines</h3>
+                <ul class="text-gray-300 space-y-2 text-left">
+                    <li>• Space meals 3-4 hours apart</li>
+                    <li>• Eat within 1 hour post-workout</li>
+                    <li>• Have protein with each meal</li>
+                    <li>• Adjust portions based on hunger</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supplements -->
+    <section id="supplements">
+        <h2 class="text-2xl font-bold mb-4 section-header">Supplements & Hydration</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-black p-6 rounded-lg border border-red-800">
+                <h3 class="text-xl text-red-500 mb-4">Daily Supplements</h3>
+                <ul class="text-gray-300 space-y-2 text-left">
+                    <li>• Whey Protein: 1-2 scoops daily</li>
+                    <li>• Multivitamin: 1 tablet with breakfast</li>
+                    <li>• Fish Oil: 1000mg with any meal</li>
+                    <li>• Creatine: 5g daily (optional)</li>
+                </ul>
+            </div>
+            <div class="bg-black p-6 rounded-lg border border-red-800">
+                <h3 class="text-xl text-red-500 mb-4">Hydration Guidelines</h3>
+                <ul class="text-gray-300 space-y-2 text-left">
+                    <li>• Minimum 2.5-3 liters water daily</li>
+                    <li>• Extra 500ml during workouts</li>
+                    <li>• Monitor urine color (light yellow)</li>
+                    <li>• Limit caffeine after 4 PM</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 px-6 border-t border-red-800">
+        <div class="container mx-auto grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-4 text-red-500 flex items-center justify-center">
+                    <i class="bi bi-gear-fill text-white mr-2"></i>EGO GYM
+                </h3>
+                <p>Transform your body, transform your life.</p>
+            </div>
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-4 text-red-500">Connect With Us</h3>
+                <div class="space-y-4">
+                    <a href="https://www.instagram.com/egoo.gym" target="_blank" class="flex items-center justify-center hover:text-red-500 transition-colors">
+                        <i class="bi bi-instagram text-2xl mr-3"></i> Follow us on Instagram
+                    </a>
+                    <a href="https://bit.ly/egogym-location" target="_blank" class="flex items-center justify-center hover:text-red-500 transition-colors">
+                        <i class="bi bi-geo-alt-fill text-2xl mr-3"></i> Find Our Location
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUJ0jFUxLIvjjVWFcNrHg9fl45bx3Fc3_0ry52y2lOPuHa_w/viewform?usp=dialog" target="_blank" class="flex items-center justify-center hover:text-red-500 transition-colors">
+                        <i class="bi bi-chat-dots-fill text-2xl mr-3"></i> Feedback Form
+                    </a>
+                </div>
+            </div>
+            <div class="text-center">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-red-500 flex items-center justify-center">
+                        <i class="bi bi-envelope-fill text-white mr-2"></i> Contact Us
+                    </h3>
+                    <a href="mailto:contact@egogym.com" class="flex items-center justify-center hover:text-red-500 transition-colors mb-4">
+                        <i class="bi bi-envelope text-2xl mr-3"></i> contact@egogym.com
+                    </a>
+                </div>
+                <p class="text-sm text-gray-400">&copy; 2025 EGO GYM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
